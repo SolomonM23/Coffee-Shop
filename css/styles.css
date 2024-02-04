@@ -92,7 +92,7 @@ body {
     height: 5rem;
     display: flex;
     align-items: center;
-    transform: scaleY(0);
+    transform: scaleY(0); /* pay attention to what happens with this, and origin*/
     transform-origin: top;
 }
 
