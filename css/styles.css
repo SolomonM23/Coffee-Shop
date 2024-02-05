@@ -41,6 +41,20 @@ body {
     background: var(--black);
 }
 
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
 .header {
     background: var(--bg);
     display: flex;
@@ -118,7 +132,7 @@ body {
 
 .header .cart-items-container {
     position: absolute;
-    top: 100%; right: 0;
+    top: 100%; right: -100%;
     height: calc(100vh - 9.5rem); /*look into this function*/
     width: 35rem;
     background: #fff;
@@ -133,9 +147,9 @@ body {
     gap: 1.5rem;
 }
 
-.header .cart-item img { /*This is something i added. not in the tutorial*/
-    width: 14rem;
-    height: 14rem;
+.header .cart-item img { 
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -150,4 +164,20 @@ body {
 
 .header .cart-items-container .cart-item .fa-times:hover {
     color: var(--main-color);
+}
+
+.header .cart-items-container .cart-item .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .cart-items-container .cart-item .content .price {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.header .cart-items-container .btn {
+    width: 100%;
+    text-align: center;
 }
