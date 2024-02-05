@@ -239,6 +239,20 @@ section {
         width: 90%;
         right: 2rem;
     }
+
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -261,10 +275,25 @@ section {
 
 .home .content {
     max-width: 60rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(15px);
+    transform: scale(1);
+    border-radius: 25px;
+    -webkit-backdrop-filter: saturate(180%) blur(15px);
+    backdrop-filter: saturate(180%) blur(15px);
 }
 
 .home .content h3 {
     font-size: 6rem;
     text-transform: uppercase;
     color: #fff;
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+    color: #eee;
 }
