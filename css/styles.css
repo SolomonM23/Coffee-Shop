@@ -200,7 +200,9 @@ body {
     .header {
         padding: 1.5rem 2rem;
     }
+}
 
+@media (max-width:768px){
     #menu-btn {
         display: inline-block;
     }
@@ -229,4 +231,12 @@ body {
         width: 90%;
         right: 2rem;
     }
+}
+
+@media (max-width: 450px) {
+
+    html{
+        font-size: 50%;
+    }
+
 }
